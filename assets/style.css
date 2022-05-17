@@ -37,7 +37,7 @@ li, a, button{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
 }
@@ -45,6 +45,7 @@ header{
 /*Image logo*/
 .logo{
     cursor: pointer;
+    margin-right: auto;
 }
 
 .nav-links{
@@ -67,6 +68,7 @@ header{
 
 /*Button*/
 button{
+    margin-left: 20px;
     padding: 9px 25px;
     background-color: var(--rgba-color);
     border: none;
@@ -81,16 +83,78 @@ button:hover{
 
 /*footer*/
 footer{
-    position:absolute;
+    position: absolute;
+    bottom: 0;
     left: 0;
-    bottom:0;
-    width:100%;
-    height:80px;   /* Height of the footer */
-    background: var(--nav-color);
+    right: 0;
+    border-top: 5px solid var(--secondary-color);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: var(--text-color);
 }
 
-/*footer text*/
-#footer-text{
-    color: var(--text-color);
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.footer-content h3{
+    font-size: medium;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: normal;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: var(--secondary-color);
+
+}
+
+.footer-bottom{
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: small;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
 }
