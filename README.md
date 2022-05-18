@@ -7,8 +7,7 @@ media so that they can see more about me.
 
 ## Installation
 
-Just run the html code provided or use the link of the page in order to run and see the end result - https://andresparraarze.github.io/web-portfolio/![image](https://user-images.githubusercontent.com/82328303/168948597-769743af-b750-47a4-bc36-9f18158d282b.png)
-
+Just run the html code provided or use the link of the page in order to run and see the end result - https://andresparraarze.github.io/web-portfolio/
 
 ## Usage
 
