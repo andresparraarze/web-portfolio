@@ -19,6 +19,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*body*/
 body{
     font-family: var(--font-font-family);
@@ -46,6 +50,7 @@ header{
 .logo{
     cursor: pointer;
     margin-right: auto;
+    object-fit: cover;
 }
 
 .nav-links{
@@ -79,11 +84,55 @@ button{
 
 button:hover{
     background-color: var(--rgba2-color); 
+
+}
+
+/*Projects*/
+.image-grid{
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2{
+    grid-column: span 2;
+}
+
+.image-grid-row-2{
+    grid-row: span 2;
+}
+
+/*Projects media size*/
+@media screen and (max-width: 1024px) {
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-grid{
+        --num-cols: 1;
+        --row-height: 250px;
+    }
 }
 
 /*footer*/
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
