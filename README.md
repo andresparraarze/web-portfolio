@@ -7,7 +7,7 @@ media so that they can see more about me.
 
 ## Installation
 
-Just run the html code provided or use the link of the page in order to run and see the end result
+Just run the html code provided or use the link of the page in order to run and see the end result - https://andresparraarze.github.io/web-portfolio/
 
 ## Usage
 
